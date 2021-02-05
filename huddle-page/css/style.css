@@ -1,0 +1,114 @@
+:root {
+  --primary-color-violet: hsl(257, 40%, 49%);
+  --primary-color-soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background-color: var(--primary-color-violet);
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+main {
+  text-align: center;
+}
+main .logo {
+  text-align: left;
+  margin: 15px;
+}
+main .logo img {
+  padding-left: 20px;
+  width: 30%;
+}
+main .mockup {
+  width: 80%;
+}
+main .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 25px;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+main p {
+  width: 80%;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-top: 0px;
+}
+main button {
+  margin-top: 4vh;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  width: 50%;
+  height: 7vh;
+  border-radius: 20%;
+  color: var(--primary-color-violet);
+  font-size: 10px;
+  box-shadow: 0px 4px 10px 0px #1c1c1c;
+  border: none;
+}
+main button:hover {
+  background-color: #941919;
+  color: white;
+}
+main .socials {
+  padding-top: 7vh;
+}
+main .socials i {
+  margin: 0 5px;
+  color: white;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+  }
+
+  main {
+    padding-top: 2vh;
+    padding-left: 2%;
+  }
+  main .logo {
+    text-align: left;
+  }
+  main .logo img {
+    width: 15%;
+  }
+  main .socials {
+    text-align: right;
+    padding-right: 2%;
+  }
+  main .main {
+    padding-left: 2%;
+    display: flex;
+    justify-content: space-around;
+  }
+  main .main .mockup {
+    width: 40%;
+  }
+  main .main .right-content {
+    padding-top: 5vh;
+    text-align: left;
+  }
+  main .main .right-content .desc {
+    width: 70%;
+  }
+  main .main .right-content .desc h1 {
+    font-size: 2em;
+  }
+  main .main .right-content button {
+    margin-left: 7%;
+    height: 6vh;
+    width: 20%;
+  }
+}

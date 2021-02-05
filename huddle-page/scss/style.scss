@@ -1,0 +1,126 @@
+:root{
+    --primary-color-violet: hsl(257, 40%, 49%);
+    --primary-color-soft-magenta: hsl(300, 69%, 71%); 
+
+}
+
+body{
+ 
+    background-color: var(--primary-color-violet);
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+main{
+    text-align: center;
+
+    .logo{
+        text-align: left;
+        margin:15px;
+        img{
+            padding-left: 20px;
+            width:30%;
+        }
+    } 
+    .mockup{
+        width: 80%;
+    }
+    .desc{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    h1{
+        width: 80%;
+        font-family: 'Poppins', sans-serif;
+        color:white;
+        font-size: 25px;
+        line-height: 1.2em;
+        margin-bottom: 10px;
+    }
+    p{
+        width: 80%;
+        font-family: 'Open Sans', sans-serif; 
+        color:white;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 400;
+        margin-top:0px
+    }
+
+    button{
+        margin-top:4vh;
+        font-family: 'Poppins', sans-serif;
+        background-color: white;
+        width: 50%;
+        height: 7vh;
+        border-radius: 20%;
+        color: var(--primary-color-violet);
+        font-size: 10px;
+        box-shadow:0px 4px 10px 0px rgb(28, 28, 28);
+        border: none;
+    }
+    button:hover{
+        background-color: rgb(148, 25, 25);
+        color: white;
+    }
+
+    .socials{
+        padding-top: 7vh;
+        i{
+            margin:0 5px;
+            color: white;
+        }
+    }
+}
+
+@media(min-width:375px){
+    body{
+        background-image: url('../images/bg-desktop.svg');
+    }
+    main{
+        padding-top:2vh;
+        padding-left: 2%;
+        
+    .logo{
+        text-align: left;
+        img{
+            width:15%;
+        }
+    }
+    .socials{
+        text-align: right;
+        padding-right:2%;
+    }
+    
+     .main{
+         padding-left:2%;
+         display: flex;
+         justify-content: space-around;
+
+         .mockup{
+             width: 40%;
+         }
+         .right-content{
+            padding-top: 5vh;
+            text-align: left;
+
+
+            .desc{
+                width:70%;
+                h1{
+                    font-size: 2em;
+                }
+            }
+
+            button{
+                margin-left:7%;
+                height: 6vh;
+                width:20%;
+            }
+         }
+     } 
+    
+    }
+}
