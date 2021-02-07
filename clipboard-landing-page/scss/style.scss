@@ -1,0 +1,265 @@
+:root {
+    --primary-color-strong-cyan: hsl(171, 66%, 44%);
+    --primary-color-light-blue: hsl(233, 100%, 69%);
+    --neutral-color-dark-grayish-blue: hsl(210, 10%, 33%);
+    --neutral-grayish-blue: hsl(201, 11%, 66%);
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/bg-header-mobile.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    text-align: center;
+    padding: 5vh 0;
+    margin: 0 auto;
+    width: 70vw;
+}
+
+main {
+    h1 {
+        font-weight: 600;
+        font-size: 1.5rem;
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px 0;
+        color: var(--neutral-color-dark-grayish-blue)
+    }
+    p {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-weight: 400;
+        font-size: 0.7rem;
+        color: var(--neutral-grayish-blue);
+    }
+    button {
+        display: block;
+        margin: 10px auto;
+        border: none;
+        height: 5vh;
+        width: 30vw;
+        border-radius: 10%;
+        color: white;
+        font-size: 0.7rem;
+    }
+    .ios-button {
+        background-color: var(--primary-color-strong-cyan);
+    }
+    .ios-button:hover {
+        background-color: white;
+        color: var(--primary-color-strong-cyan);
+        border: 1px solid var(--primary-color-strong-cyan);
+    }
+    .ios-button:active {
+        background-color: var(--primary-color-strong-cyan);
+        color: white;
+    }
+    .mac-button {
+        background-color: var(--primary-color-light-blue);
+    }
+    .mac-button:hover {
+        background-color: white;
+        color: var(--primary-color-light-blue);
+        border: 1px solid var(--primary-color-light-blue);
+    }
+    .mac-button:active {
+        color: white;
+        background-color: var(--primary-color-light-blue);
+    }
+}
+
+.first-section {
+    margin-bottom: 5vh;
+    img {
+        width: 20%;
+        padding: 10px 0;
+    }
+}
+
+.second-section {
+    margin-bottom: 5vh;
+    .computer-img {
+        padding: 3vh 0;
+        width: 70%;
+    }
+}
+
+.third-section {
+    .devices-img {
+        padding: 3vh 0;
+        width: 70%;
+    }
+    .icons-section {
+        padding: 2vh 0;
+    }
+    .icon {
+        width: 7%;
+    }
+}
+
+.last-section {
+    .companies-logos {
+        padding-bottom: 5vh;
+    }
+    .company-logo {
+        display: block;
+        width: 30%;
+        margin: 5vh auto;
+    }
+}
+
+footer {
+    margin-top: 10vh;
+    img {
+        width: 10%;
+    }
+    .links {
+        margin: 2vh 0;
+        a {
+            font-size: 0.8rem;
+            display: block;
+            text-decoration: none;
+            color: var(--neutral-color-dark-grayish-blue);
+        }
+        a:hover {
+            color: black;
+        }
+    }
+    .socials {
+        color: var(--neutral-color-dark-grayish-blue);
+        i {
+            margin: 1vh 2%;
+            color: var(--neutral-color-dark-grayish-blue);
+        }
+        i:hover {
+            color: black;
+        }
+    }
+}
+
+@media(min-width:550px) {
+    body {
+        width: 100%;
+        padding-top: 7vh;
+        background-image: url(../images/bg-header-desktop.png);
+    }
+    main {
+        h1 {
+            font-size: 1.3rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+        button {
+            display: inline;
+            width: 15vh;
+            height: 6vh;
+            margin: 1vh 1vh;
+        }
+    }
+    .first-section {
+        h1 {
+            font-size: 1.9rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        img {
+            width: 9vw;
+        }
+    }
+    .second-section {
+        .computer-img-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .computer-img {
+            width: 35%;
+        }
+        .computer-img-desc {
+            width: 50%;
+            text-align: start;
+            h1 {
+                font-size: 1em;
+            }
+            p {
+                font-size: 0.7em;
+            }
+        }
+    }
+    .third-section {
+        .devices-img {
+            width: 50%;
+        }
+        .icons-section {
+            width: 80%;
+            height: vh;
+            padding: 0;
+            margin: 5vh auto;
+            display: flex;
+        }
+        .icon-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            h1 {
+                font-size: 0.8rem;
+                padding: 5px 0;
+            }
+            p {
+                padding: 5px 0;
+                font-size: 0.5rem;
+            }
+        }
+        .icon {
+            margin: 0 auto;
+            width: 10%;
+            padding: 5px 0;
+        }
+    }
+    .last-section {
+        .companies-logos {
+            margin: 10vh 0;
+        }
+        .company-logo {
+            display: inline;
+            width: 10%;
+            margin: 0 3vw;
+        }
+    }
+    footer {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            width: 5vh;
+        }
+        .links {
+            width: 40vw;
+            a {
+                padding: 0 1vw;
+                font-size: 0.7rem;
+                display: inline;
+            }
+            a:hover {
+                color: black;
+            }
+        }
+        .socials {
+            width: 10vw;
+            i:hover {
+                color: black;
+            }
+        }
+    }
+}

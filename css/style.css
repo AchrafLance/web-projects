@@ -88,33 +88,34 @@ main .recent-work-title-box h1 {
   padding: 2vh 0;
 }
 main .recent-work-content {
-  margin: 8vh 0;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 main .recent-work-content .box {
-  margin: 10vh 4vh;
-  height: 30vh;
-  width: 25vw;
+  border: 0.1px black solid;
+  margin: 1vh 0;
+  height: 40vh;
+  width: 50vw;
   opacity: 0.6;
-  border-radius: 10px;
   transition: opacity 0.5s, width 0.5s, height 0.5s;
-  border: 0.1px solid #7611f8;
 }
 main .recent-work-content .box:hover {
   opacity: 1;
-  width: 26vw;
-  height: 31vh;
+  width: 60vw;
+  height: 50vh;
 }
 main .recent-work-content .box1 {
-  background-image: url(../images/huddle.bg.jpg);
+  background-image: url(../huddle-page/design/desktop-preview.jpg);
   background-size: cover;
 }
 main .recent-work-content .box2 {
-  background-image: url(../profil-card/design/desktop-design.jpg);
+  background-image: url(../clipboard-landing-page/design/desktop-preview.jpg);
   background-size: cover;
 }
 main .recent-work-content .box3 {
-  background-image: url(../social-proof/design/desktop-design.jpg);
+  background-image: url(../social-proof/design/desktop-preview.jpg);
   background-size: cover;
 }
