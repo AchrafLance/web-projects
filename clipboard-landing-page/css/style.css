@@ -219,6 +219,9 @@ footer .socials i:hover {
 
   .last-section .companies-logos {
     margin: 10vh 0;
+    padding: 1vh 15vw;
+    display: flex;
+    align-items: center;
   }
   .last-section .company-logo {
     display: inline;
