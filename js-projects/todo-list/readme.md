@@ -1,6 +1,6 @@
 # simple to-do list app with javascript: 
 
-**preview**:
+**preview:**
 
-![alt text](./preview.jpg)
+![preview.jpg](./preview.jpg)
 
