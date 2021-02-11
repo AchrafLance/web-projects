@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: brown;
+}
+
+.title {
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    box-shadow: 10px 10px 10px black;
+    padding: 0 30px
+}
+
+.main-box {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.main-box div {
+    margin: 10px 0;
+}
+
+.search-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-items input {
+    width: 90%;
+}
+
+.item-box {
+    height: 60%;
+    overflow: scroll;
+}
+
+.item-box input {
+    cursor: pointer;
+}
+
+.item-box .item {
+    width: 100%;
+}
+
+.item label {
+    font-size: 12px;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.fa-trash-alt {
+    color: brown;
+    float: right;
+    margin-right: 10px;
+}
+
+.fa-trash-alt:hover {
+    color: rgb(68, 0, 0);
+    cursor: pointer;
+}
+
+.clear-items button {
+    background-color: brown;
+    color: white;
+    border: none;
+}
+
+.clear-items button:hover {
+    background-color: rgb(100, 11, 11);
+    cursor: pointer;
+}
+
+.add-items input {
+    width: 77%;
+    height: 25px;
+}
+
+.add-items button {
+    height: 25px;
+}
+
+.add-items small {
+    color: brown;
+    font-size: 11px;
+    visibility: hidden;
+}
+
+.add-items .fa-exclamation {
+    visibility: hidden;
+}
+
+.add-items.error {
+    position: relative;
+}
+
+.add-items.error input {
+    border: 1px solid brown;
+}
+
+.add-items.error small {
+    visibility: visible;
+}
+
+.add-items.error .fa-exclamation {
+    visibility: visible;
+    color: brown;
+    position: absolute;
+    top: 4px;
+    right: 75px;
+}
