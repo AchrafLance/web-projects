@@ -106,6 +106,7 @@ main {
 
 .add-items.error input {
     border: 1px solid brown;
+    outline-color: brown;
 }
 
 .add-items.error small {
