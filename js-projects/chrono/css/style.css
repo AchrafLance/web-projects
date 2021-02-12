@@ -82,11 +82,32 @@ main {
   visibility: hidden;
 }
 
+.fa-play {
+  transition: color 0.5s;
+}
+
+.fa-play:hover {
+  color: yellow;
+}
+
 .play .fa-pause {
   position: absolute;
   visibility: visible;
+  transition: color 0.5s;
+}
+
+.play .fa-pause:hover {
+  color: yellow;
 }
 
 .play .fa-play {
   visibility: hidden;
+}
+
+.fa-sync-alt {
+  transition: color 0.5s;
+}
+
+.fa-sync-alt:hover {
+  color: yellow;
 }
