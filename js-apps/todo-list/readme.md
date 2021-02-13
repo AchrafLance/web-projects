@@ -2,5 +2,5 @@
 
 **preview:**
 
-![preview.jpg](./preview.JPG)
+![preview.jpg](./preview.jpg)
 
