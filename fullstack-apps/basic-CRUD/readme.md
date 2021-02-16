@@ -2,7 +2,7 @@
 a simple application for creating,deleting and editing notes
 
 **Preview:** 
-![preview](./preview.jpg)
+![preview](./preview.JPG)
 
 ## Backend ## 
 backend developped using spring web to create the rest api endpoints, and spring data to persiste data 
