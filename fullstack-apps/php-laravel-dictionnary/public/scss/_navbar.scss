@@ -1,0 +1,25 @@
+.nav-bar{
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    justify-content: space-between;
+
+    a:hover{
+        color:rgb(43, 41, 41); 
+    }
+}
+
+.right-side ul, .left-side ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.right-side a, .left-side a{
+    padding:0 20px;
+    color:black;
+    text-decoration: none;
+}
+
+.left-side ul{
+    padding:0;
+    text-align: left;
+}

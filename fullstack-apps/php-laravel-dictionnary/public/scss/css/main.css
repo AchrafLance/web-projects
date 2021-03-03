@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.login-title {
+  text-align: center;
+}
+
+.login-page {
+  margin: 15vh 0;
+  width: 100%;
+}
+
+.form {
+  border-radius: 5%;
+  width: 45%;
+  margin: 0 auto;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-grey);
+}
+
+.form div {
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 60%;
+  padding: 3px;
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 1px 1px 5px 1px #2cf3f0;
+  outline: none;
+}
+
+input.error {
+  border: 1px solid brown;
+}
+
+small {
+  width: 100%;
+  display: block;
+  color: brown;
+  font-size: 10px;
+  text-align: right;
+}
+
+.login-status {
+  text-align: center;
+  color: red;
+  padding: 10px;
+}
+
+form button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 4px;
+  float: right;
+}
+
+form button:hover {
+  background-color: #5f5f5f;
+  cursor: pointer;
+}
+
+.nav-bar {
+  background-color: #d0d0d0;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar a:hover {
+  color: #2b2929;
+}
+
+.right-side ul, .left-side ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.right-side a, .left-side a {
+  padding: 0 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.left-side ul {
+  padding: 0;
+  text-align: left;
+}
+
+.create-btn {
+  background-color: #2222da;
+  margin: 10px 0 0 10px;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.create-btn:hover {
+  background-color: white;
+  color: #2222da;
+  border: 1px solid #2222da;
+}
+
+.create-post {
+  opacity: 0;
+  transition: opacity 1s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  height: 80vh;
+  margin-top: -35vh;
+  /* Negative half of height. */
+  margin-left: -25vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 5%;
+  visibility: hidden;
+}
+
+.fa-times-circle {
+  float: right;
+  color: red;
+  font-size: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.fa-times-circle:hover {
+  color: #a95c5c;
+}
+
+.post-form {
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.form-title {
+  margin: 15px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.post-form div {
+  margin: 10px 0;
+}
+.post-form div input {
+  width: 100%;
+}
+.post-form div textarea {
+  width: 100%;
+  overflow: scroll;
+  font-family: "Roboto", sans-serif;
+}
+
+.post-form button {
+  width: 30%;
+  margin: 10px;
+}
+
+.post-form small {
+  margin: 0 auto;
+}
+
+textarea.error {
+  border: 1px solid brown;
+}
+
+.search-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-img img {
+  width: 20%;
+  height: 5%;
+}
+
+.search-container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.search-bar {
+  width: 60%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-icon {
+  background-color: #4848ee;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-search {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.search-bar input {
+  border: 2px solid #4848ee;
+  flex: 10;
+}
+
+.search-bar input::-moz-placeholder {
+  padding-left: 5px;
+}
+
+.search-bar input:-ms-input-placeholder {
+  padding-left: 5px;
+}
+
+.search-bar input::placeholder {
+  padding-left: 5px;
+}
+
+.search-dropdown {
+  margin: 0 auto;
+  width: 60%;
+  background-color: white;
+  border-radius: 0 0 5% 5%;
+  box-shadow: 1px 1px 10px #c5c3c3;
+  visibility: visible;
+}
+
+.search-dropdown.hidden {
+  visibility: hidden;
+}
+
+.post {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.post:hover {
+  background-color: gray;
+}
+
+.post span {
+  margin: 0 10px;
+  color: #c0bebe;
+  font-size: 0.7rem;
+}
+
+.post strong {
+  color: black;
+}
+
+:root {
+  --color-primary-grey:rgb(208, 208, 208);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e4d9d9;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.dark-backround {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: none;
+}
