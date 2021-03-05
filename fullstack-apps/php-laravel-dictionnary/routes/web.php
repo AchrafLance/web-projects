@@ -7,6 +7,7 @@ use App\Http\Controllers\Auth\LogoutController;
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\PostController;
 
 
 
@@ -39,3 +40,4 @@ Route::get('/', [DashboardController::class, 'index']);
 Route::get('/posts', [PostsController::class, 'index'])->name('posts');
 Route::post('/posts', [PostsController::class, 'addPost']);
 
+Route::get('/post/{id}', [PostController::class, 'index'])->name('post');

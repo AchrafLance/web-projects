@@ -5,12 +5,18 @@ let darkBackground = document.querySelector(".dark-backround");
 let searchInput = document.querySelector("#searchInput"); 
 let searchDropdown = document.querySelector(".search-dropdown");
 
-createBtn.addEventListener("click", function(){
-    createForm.style.opacity=1;
-    createForm.style.visibility="visible"; 
-    darkBackground.style.display="block"; 
-    darkBackground.style.opacity=0.7; 
-})
+if(createBtn != null){
+    createBtn.addEventListener("click", function(){
+        createForm.style.opacity=1;
+        createForm.style.visibility="visible"; 
+        darkBackground.style.display="block"; 
+        darkBackground.style.opacity=0.7; 
+    }); 
+}
+else{
+    console.error('create button not found'); 
+}
+
 
 closeForm.addEventListener("click", function(){
     createForm.style.opacity=0; 

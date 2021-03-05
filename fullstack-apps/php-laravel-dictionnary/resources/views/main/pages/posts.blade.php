@@ -5,6 +5,7 @@
 @auth
 <button class="create-btn">Create Post</button>
 @endauth
+<!-- post creation form  -->
 <div class="create-post">
     <i class="fas fa-times-circle"></i>
     <h1 class="form-title">Create Post</h1>
@@ -41,10 +42,9 @@
     </div>
 </div>
 <div class="search-dropdown hidden">
-    @foreach($posts as $post)
-    <a class="post" href="#">
-        <strong>{{$post->name}}</strong> <span>{{$post->created_at->diffForHumans()}}</span>
-        <!-- <p>{{$post->body}}</p> -->
+    @foreach($posts as $item)
+    <a class="post" href="{{ url('post/'.$item->id) }}">
+        <strong>{{$item->name}}</strong> <span>{{$item->created_at->diffForHumans()}}</span>
 </a>
     @endforeach
 </div>
