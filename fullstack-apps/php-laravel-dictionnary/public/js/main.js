@@ -4,6 +4,7 @@ let closeForm = document.querySelector(".fa-times-circle");
 let darkBackground = document.querySelector(".dark-backround"); 
 let searchInput = document.querySelector("#searchInput"); 
 let searchDropdown = document.querySelector(".search-dropdown");
+let dictionaryLogo = document.querySelector("#dictionary-logo"); 
 
 if(createBtn != null){
     createBtn.addEventListener("click", function(){
@@ -45,6 +46,9 @@ searchInput.addEventListener("input", function(){
         }
 
     }
-        
-    
+})
+
+dictionaryLogo.addEventListener('onload', function(){
+    dictionaryLogo.style.opacity=1; 
+    dictionaryLogo.style.margin=0;
 })

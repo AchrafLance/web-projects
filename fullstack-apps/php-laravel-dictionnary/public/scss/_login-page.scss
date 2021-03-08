@@ -1,69 +1,78 @@
-.login-title{
-    text-align: center;
-}
-
 .login-page{
     margin:15vh 0; 
     width:100%;
-}
-
-.form{
-    border-radius: 5%;
-    width:45%;
-    margin:0 auto; 
-    padding:25px 10px;
-    display:flex; 
+    display:flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: var(--color-primary-grey);
+    align-items: center;
 }
 
-.form div{
-    width: 100%;
-    margin: 5px 0;
-    display:flex; 
-    justify-content: space-between;
+.login-title{
+    color:var(--color-primary-apple-blossom); 
 }
 
-input{
+.login-form-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    width: 45%;
+    background-color: var(--color-primary-apple-blossom);
+}
+
+.login-form{
+    width:90%;
+    padding:15px;
+}
+
+.login-form div{
+    margin: 12px 0;
+}
+
+.login-form input{
    width:60%;
    padding: 3px;
+   margin-left:10px;
    outline: none;
-
+   border:none;
+   float:right;
 }
 
-input:focus{
-    box-shadow: 1px 1px 5px 1px rgb(44, 243, 240);
-    outline: none;
+.login-form label{
+    color:white;
 }
 
-input.error{
-    border: 1px solid brown;
-}
-
-small{
-    width:100%;
+.login-form small{
     display:block;
-    color:brown;
-    font-size: 10px;
-    text-align: right;
+    text-align: right; 
+    margin:5px 0;
+    color:white;
+    font-size: 0.5rem;
+}
+.login-form button {
+    background-color: white;
+    border: var(--color-primary-apple-blossom);
+    color: var(--color-primary-apple-blossom);
+    padding: 4px;
+    width: 30%;
+    float: right;
+}
+ 
+ .login-form button:hover{
+     border: 1px solid white; 
+     background-color: var(--color-primary-apple-blossom);
+     color:white;
+     cursor: pointer;
+ }
+
+.login-form input.error{
+    border: 1px solid brown;
 }
 
 .login-status{
     text-align: center;
-    color:red; 
-    padding:10px;
+    color:var(--color-primary-apple-blossom);
+    padding:10px;    
 }
 
-form button{
-   background-color: white;
-   border: 1px solid black;
-   padding:4px;
-   float:right;
-}
-
-form button:hover{
-    background-color: rgb(95, 95, 95);
-    cursor: pointer;
-}

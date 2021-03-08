@@ -1,16 +1,36 @@
+.fa-arrow-circle-left{
+    color:var(--color-primary-apple-blossom); 
+    font-size: 2rem;
+    margin:5% 0 0 5%; 
+}
+.posts-container{
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .post-details{
-    background-color: var(--color-primary-grey);
+    margin-top:10vh;
+    background-color: var(--color-primary-apple-blossom);
     font-size: 0.5rem;
-    padding:1%;
-    margin: 1% 0; 
+    width:60%;
+    padding:2%; 
+    text-align: left;
+    border-radius:1%;
+    box-shadow: 5px 5px 5px black;
+    animation-name: opacity-animation;
+    animation-duration: 1s;
+    
+
 
     h1{
         font-weight: bold;
-        color:brown
+        color:rgb(169, 17, 17)
     }
     span{
         margin:0 1%;
         font-weight: 200;
-        color:black
+        color:white;
     }
 }

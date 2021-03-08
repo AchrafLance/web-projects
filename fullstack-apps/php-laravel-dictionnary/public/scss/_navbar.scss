@@ -1,10 +1,10 @@
 .nav-bar{
-    background-color: rgb(208, 208, 208);
+    background-color: var(--color-primary-apple-blossom); 
     display: flex;
     justify-content: space-between;
 
     a:hover{
-        color:rgb(43, 41, 41); 
+        color: white;
     }
 }
 
@@ -15,7 +15,7 @@
 
 .right-side a, .left-side a{
     padding:0 20px;
-    color:black;
+    color:rgb(233, 231, 231);
     text-decoration: none;
 }
 

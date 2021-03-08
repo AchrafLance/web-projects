@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('/scss/css/main.css') }}"> 
-    <title>Document</title>
+    <link rel="icon" href="/public/media/favicon.png" type="image/gif" sizes="16x16">
+    <title>Dictionary | CHU</title>
     <script src="https://kit.fontawesome.com/d90f2c9be0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
     <div class="left-side">
         <ul>
         <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
-        <li><a href="{{ route('posts') }} ">Posts</a></li>
+        <li><a href="{{ route('posts') }} ">Dictionary</a></li>
         </ul>
     </div>
     <div class="right-side">

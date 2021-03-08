@@ -1,20 +1,51 @@
-.create-btn{
-    background-color: rgb(34, 34, 218); 
-    margin:10px 0 0 10px;
-    padding:10px;
-    color:white;
-    border:none;
-    border-radius: 5%;
+$red: #E1332D;
+$white: #fff;
+
+/*
+************************************************************************
+Add Word Button
+************************************************************************
+*/
+
+.btn {
+    padding:10px 30px;
+    margin:20px 0 0 20px;
+    color: var(--color-primary-apple-blossom);
     cursor: pointer;
-    transition: background-color 0.5s;
+    display: block;
+    font-size:16px;
+    font-weight: 400;
+    max-width: 160px; 
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%; 
 }
 
-.create-btn:hover{
-    background-color: white;
-    color:rgb(34, 34, 218);  
-    border: 1px solid rgb(34, 34, 218); 
+.btn-5 {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px white;
+    outline: 1px solid;
+    outline-color: var(--color-primary-apple-blossom);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  } 
+  
+  .btn-5:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px var(--color-primary-apple-blossom), 0 0 20px var(--color-primary-apple-blossom);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px var(--color-primary-apple-blossom);
+  }
 
-}
+ /*
+************************************************************************
+Form Pop-Up 
+************************************************************************
+*/
+
+
 .create-post{
     opacity: 0;
     transition: opacity 1s;   
@@ -29,13 +60,19 @@
     box-shadow: 5px 5px 5px black;
     border-radius: 5%;
     visibility: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.post-form{
+    width:80%;
+}
 .fa-times-circle {
     float: right;
-    color: red;
+    color: var(--color-primary-apple-blossom);
     font-size: 20px;
-    margin: 15px;
+    margin: 5% 0;
     cursor: pointer;
 }
 
@@ -43,35 +80,61 @@
     color:rgb(169, 92, 92); 
 }
 
-.post-form{
-    padding:40px 0; 
-    margin:0 auto;
-    width:80%;
-    text-align: center;
-}
 
 .form-title{
-    margin:15px;
+    margin:5% 0; 
     text-align: left;
     font-size: 1rem;
+    color: var(--color-primary-apple-blossom);
 }
 
 .post-form div{
-    margin:10px 0;
-    input { 
-        width:100%;
-    }
-    textarea{
-        width:100%;
-        overflow: scroll;
-        font-family: 'Roboto', sans-serif;
+    margin:12px 0;
+}
 
-    }   
+.post-form input{ 
+    width:100%;
+    border: 1px solid var(--color-primary-apple-blossom);
+    padding:10px;
+    outline: none;
+}
+
+.post-form input::placeholder{
+    color:var(--color-primary-apple-blossom);
+    margin-left:10px;
+    font-family: 'Jaldi', sans-serif;  
+}
+
+.post-form textarea{
+    padding:10px;
+    width:100%;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+    border:1px solid var(--color-primary-apple-blossom);
+    outline: none;
+    }
+
+.post-form textarea::placeholder{
+    margin-left:10px;
+    color:var(--color-primary-apple-blossom); 
+    font-family: 'Jaldi', sans-serif;
 }
 
 .post-form button{
-    width:30%; 
-    margin:10px;
+    width:20%; 
+    margin:20px 0;
+    padding:10px;
+    background-color: var(--color-primary-apple-blossom);
+    color:white;
+    border:none;
+    border-radius: 5%;
+    float:right;
+}
+
+.post-form button:hover{
+    color: var(--color-primary-apple-blossom);
+    border:1px solid var(--color-primary-apple-blossom);
+    background-color: white;
 }
 
 .post-form small{
@@ -83,7 +146,19 @@ textarea.error{
 }
 
 
-//Posts list - Search Container
+/*
+************************************************************************
+Search Words
+************************************************************************
+*/
+
+.search-content{
+    margin-top:10vh;
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .search-img{
     width:100%; 
@@ -92,8 +167,7 @@ textarea.error{
     align-items: center;
 
     img{
-        width:20%; 
-        height:5%; 
+        width:10%; 
     }
 
 }
@@ -111,28 +185,34 @@ textarea.error{
     height: 10vh;
     display:flex; 
     justify-content: space-between;
+    border:1px solid var(--color-primary-apple-blossom);
+    border-radius: 2%;
+
 }
 
 .search-icon{
-    background-color:rgb(72, 72, 238); 
-    flex:2; 
+    background-color: white;
+    border:none;
+    flex:1; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .fa-search{
-    color:white; 
+    color:var(--color-primary-apple-blossom);
     font-size: 1.5rem;
 }
 
 .search-bar input{
-    border:2px solid rgb(72, 72, 238); 
+    border:none;
+    outline: none;
     flex:10;
 }
 
 .search-bar input::placeholder{
     padding-left:5px;
+    color: var(--color-primary-apple-blossom);
 }
 
 .search-dropdown{
@@ -142,6 +222,8 @@ textarea.error{
     border-radius: 0 0 5% 5%;
     box-shadow:1px 1px 10px rgb(197, 195, 195);
     visibility: visible;
+    overflow: auto;
+    max-height: 200px;
 }
 .search-dropdown.hidden{
     visibility: hidden;
@@ -155,18 +237,26 @@ textarea.error{
     margin-bottom: 10px;
     cursor: pointer;
     text-decoration: none;
+    
+    span{
+        margin:0 10px;
+        color: rgb(192, 190, 190);
+        font-size: 0.7rem;
+    }
+    
+    strong{
+        color:var(--color-primary-apple-blossom);   
+    }
+   
 }
 
 .post:hover{
-    background-color: gray;
+    background-color: var(--color-primary-apple-blossom);
+    strong{
+        color:white;
+    }
 }
 
-.post span{
-    margin:0 10px;
-    color: rgb(192, 190, 190);
-    font-size: 0.7rem;
-}
 
-.post strong{
-    color:black;
-}
+
+
