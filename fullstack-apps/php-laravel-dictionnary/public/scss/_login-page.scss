@@ -55,7 +55,7 @@
     border: var(--color-primary-apple-blossom);
     color: var(--color-primary-apple-blossom);
     padding: 4px;
-    width: 30%;
+    width: 60%;
     float: right;
 }
  
@@ -76,3 +76,12 @@
     padding:10px;    
 }
 
+.forgot-password{
+    a{
+        text-decoration: none;
+        color:white; 
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}

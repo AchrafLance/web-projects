@@ -41,3 +41,15 @@ Route::get('/posts', [PostsController::class, 'index'])->name('posts');
 Route::post('/posts', [PostsController::class, 'addPost']);
 
 Route::get('/post/{id}', [PostController::class, 'index'])->name('post');
+
+Route::get('/manuel-de-procedure', function(){
+    return view('main.pages.manuel-de-procedure');
+})->name('manuel-de-procedure');
+
+Route::get('/fiche-de-poste', function(){
+    return view('main.pages.fiche-de-poste');
+})->name('fiche-de-poste'); 
+
+Route::get('/textes-reglementaires', function(){
+    return view('main.pages.textes-reglementaires');
+})->name('textes-reglementaires'); 

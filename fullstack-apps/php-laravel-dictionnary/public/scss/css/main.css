@@ -201,7 +201,7 @@
   border: var(--color-primary-apple-blossom);
   color: var(--color-primary-apple-blossom);
   padding: 4px;
-  width: 30%;
+  width: 60%;
   float: right;
 }
 
@@ -220,6 +220,14 @@
   text-align: center;
   color: var(--color-primary-apple-blossom);
   padding: 10px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: white;
+}
+.forgot-password a:hover {
+  text-decoration: underline;
 }
 
 .registration-page {
@@ -612,6 +620,10 @@ Search Words
   align-items: flex-start;
 }
 
+.fa-arrow-circle-left:hover {
+  color: brown;
+}
+
 .post-details {
   margin-top: 10vh;
   background-color: var(--color-primary-apple-blossom);
@@ -626,9 +638,18 @@ Search Words
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
+.post-details .edit-delete-post-icons {
+  margin: 5px 0;
+}
+.post-details .fa-pen-square, .post-details .fa-trash-alt, .post-details .fa-thumbs-up, .post-details .likes-count {
+  float: right;
+  color: white;
+  font-size: 1rem;
+  margin: 0 5px;
+}
 .post-details h1 {
   font-weight: bold;
-  color: #a91111;
+  color: black;
 }
 .post-details span {
   margin: 0 1%;

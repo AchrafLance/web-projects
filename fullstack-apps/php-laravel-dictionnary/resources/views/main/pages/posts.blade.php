@@ -4,7 +4,7 @@
 
 @auth
 
-<span class="btn btn-5 create-btn">Add Word</span> 
+<span class="btn btn-5 create-btn">Ajouter</span> 
 
 <!-- <button class="create-btn">Add Word</button> -->
 @endauth
@@ -14,10 +14,10 @@
     <form action="{{ route('posts') }}" method="post" class="post-form">
         @csrf
         <i class="fas fa-times-circle"></i>
-        <h1 class="form-title">Add New Word</h1>
+        <h1 class="form-title">Add un nouveau mot</h1>
         
         <div class="post-body">
-            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="name" placeholder="Nom">
         </div>
 
         <div class="post-description">
@@ -29,7 +29,7 @@
             <input type="text" name="source" placeholder="Source">
         </div>
 
-        <button type="submit" class="btn5">Add</button>
+        <button type="submit" class="btn5">Ajouter</button>
     </form>
 </div>
 
@@ -48,7 +48,7 @@
         @foreach($posts as $item)
         <a class="post" href="{{ url('post/'.$item->id) }}">
             <strong>{{$item->name}}</strong> <span>{{$item->created_at->diffForHumans()}}</span>
-    </a>
+        </a>
         @endforeach
     </div>
 </div>

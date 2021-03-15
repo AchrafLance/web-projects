@@ -22,14 +22,15 @@
             <div class="password-container">
                 <label for="password">Password</label>
                 <input type="password" name="password" placeholder="Password"  @error('password') class="error" @enderror>
-                </div>
-                <div>
-                    @error('password')
-                    <small>{{$message}}</small>
-                    @enderror
-                </div>
+                @error('password')
+                <small>{{$message}}</small>
+                @enderror   
+            </div>
+                   
+                
         
             <div class=button-container><button type="submit">Login</button></div>
+            <div class="forgot-password"><a href="#">Forgot Password?</a></div>
         </form>
     </div>
 </div>
