@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body.index-page{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(213, 74, 74);
+}
+
+.login-page{
+    display:flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+
+}
+
+.section1{
+    flex-grow: 3;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section2{
+    flex-grow: 1;
+    margin-left:5x;
+}
+
+.section3{
+    margin-top:5px;
+    width:100%; 
+    height: 30vh;
+  
+}
+.section1, .section2, .section3{
+    background-color: white;
+}
+
+img.form-icon{
+    height: 15px;
+    width: 15px;
+}
+
+img.logo{
+    height: 150px;
+    width: 250px;
+}
+
+.form-container{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+input.nickname-input, select{
+    background-color: white;
+    border: black 1px solid;
+    padding: 7px;
+    margin: 5px 0 5px 0;
+    width: 100%;
+}
+
+input.submit-button{
+    background-color: rgb(220, 77, 77);
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    margin-top:5px;
+}
+
+input.submit-button:hover{
+    background-color: rgb(181, 44, 44);
+}
+
+.gender-input{
+    margin: 5px 0 7px 0;
+}
+
+p.submit-description{
+    font-size: 10px;
+    
+}
+
+.form-label{
+    font-weight: 900;
+}
+
+.chat-page{
+    background-color: gray;
+}
+
+.header-section{
+    background-color: red;
+    width: 100%;
+    height: 15vh;
+    display: flex; 
+    flex-direction: row; 
+    justify-content:space-between ;
+    align-items: center;
+}
+img.navigation-logo{
+    width:120px; 
+    height: 60px;
+}
+
+
+ul.navigation-menu li{
+    display:inline;
+    margin:0 5px 0 5px;
+    padding-top: 50px;
+}
+ul.navigation-menu li a{
+    text-decoration: none;
+    color: white;
+} 
+
+.main-section{
+    height: 100%;
+    display:flex; 
+    flex-direction: row;
+}
+
+.contacts-section{
+    flex-grow: 1;
+    border: 1px solid black; 
+
+}
+
+.chat-section{
+    flex-grow: 4;
+    border:1px solid green; 
+    background-color: white;
+}
+
+.chat-section ul li{
+    list-style-type: none;
+    padding-left: 10px;
+    font-size: 10px;
+ 
+}

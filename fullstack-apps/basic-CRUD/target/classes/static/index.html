@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Crud app | Achraf ELKHANDOUULI</title>
+</head>
+
+<body>
+    <div class="add-card">
+        <div class="title">
+            <label for="title">Title: </label> <br>
+            <input type="text" id="title" class="error"> <br>
+            <small>sample error</small>
+
+        </div>
+        <div class="description">
+            <label for="description">Content:</label> <br>
+            <textarea name="" id="description"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="create">Create</button>
+            <button class="btn" id="update">Update</button>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="card-section">
+        <div class="card">
+            <h1>Sample Note</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium commodi ipsa dignissimos deserunt, tempore eaque dolor soluta recusandae fuga aut eligendi reiciendis voluptatum nihil possimus placeat nostrum asperiores minus adipisci.</p>
+            <div class="buttons cardButttons" data-id=100>
+                <button class="delete-card note-btn" id="delete">Delete</button>
+                <button class="edit-card note-btn" id="edit">Edit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
